@@ -4,7 +4,7 @@ Include the date you created this project and README file.
 ### Project Title: US Bikeshare Data
 Replace the Project Title
 
-### Description: This project is about refactoring a previous project on US bikeshare data from Chicago, Washington, and New York City.
+### Description: This project is about refactoring a previous project on US bikeshare data from Chicago, Washington, and New York City. The files contain information about bikeshare rentals in the three  selected US cities.
 Describe what your project is about and what it does
 
 ### Files used: bikeshare.py, chicago.csv, washington.csv, new_york_city.csv
