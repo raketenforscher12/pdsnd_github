@@ -28,8 +28,16 @@ def get_filters():
             print("Okay, let's explore data for {}!".format(city.title()))
             break
         else:
+<<<<<<< HEAD
            print("That is not an option.")
 
+||||||| 4b32f98
+           print("That is not one of the options.")
+
+=======
+           print("That is not one of the options.")
+
+>>>>>>> documentation
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
         month = input("Which month would you like to look at - january, february, march, april, may, june, or all?")
@@ -63,8 +71,11 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    df = pd.read_csv(city_data[city])
 
+    df = pd.read_csv(city_data[city])
+    df = pd.read_csv(city_data[city])
+    df = pd.read_csv(city_data[city])
+    
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
@@ -194,6 +205,7 @@ def user_stats(df):
 
 
 def display_data(df):
+    """Displays question on 5 rows of individual data"""
     view_data = input("Would you like to view 5 rows of individual trip data? Enter yes or no?")
     start_loc = 0
     while view_data.lower() == "yes":
@@ -205,6 +217,7 @@ def display_data(df):
 
 
 def main():
+    """Displays results"""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
